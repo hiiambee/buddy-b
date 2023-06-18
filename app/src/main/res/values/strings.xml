@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BuddyB</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
 </resources>
