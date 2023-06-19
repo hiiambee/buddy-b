@@ -6,4 +6,11 @@
     <string name="password">Password</string>
     <string name="Login">Log In</string>
     <string name="Register">Sign Up</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="Next">Next</string>
+    <string name="title_activity_intro1">Intro1</string>
+    <string name="Skip">Skip</string>
+    <string name="title_activity_intro2">Intro2</string>
+    <string name="title_activity_intro3">Intro3</string>
+    <string name="splash">Logo Here!</string>
 </resources>

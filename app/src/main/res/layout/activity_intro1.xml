@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Intro1">
+
+    <Button
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:text="@string/Next"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+    <Button
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:text="@string/Skip"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
