@@ -24,7 +24,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/signup_email"
             android:hint="@string/email"
             android:layout_width="match_parent"
             android:padding="15dp"
@@ -36,8 +36,20 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/signup_password"
             android:hint="@string/password"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_confirm"
+            android:hint="@string/confirm"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -48,5 +60,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/loginredirect"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/loginred"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
 
 </LinearLayout>
