@@ -17,4 +17,7 @@
     <string name="confirm">Confirm Password</string>
     <string name="loginred">Already a user? Log in!</string>
     <string name="signupred">Don\'t have an account? Sign up!</string>
+    <string name="LoginWith">Or log in using:</string>
+    <string name="Google">Google</string>
+    <string name="Facebook">Facebook</string>
 </resources>

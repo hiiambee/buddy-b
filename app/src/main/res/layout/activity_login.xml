@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
     android:foreground="@drawable/icon"
     android:foregroundGravity="top|center"
-    android:background="@drawable/gradient_drawable"
-    tools:context=".Login"
-    >
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
 
     <TextView
-        android:text="@string/Login"
-        android:fontFamily="sans-serif-condensed-medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="20sp"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
         android:padding="15dp"
+        android:text="@string/Login"
         android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -30,10 +30,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email"
-            android:hint="@string/email"
             android:layout_width="match_parent"
-            android:padding="15dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -42,21 +42,21 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_password"
-            android:hint="@string/password"
-            android:padding="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_login"
-        android:text="@string/Login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/Login" />
 
     <TextView
-        android:layout_width="match_parent"
         android:id="@+id/signupredirect"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
@@ -65,5 +65,33 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|bottom"
+        android:padding="10dp"
+        android:text="@string/LoginWith"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_googlelogin"
+        android:layout_width="94dp"
+        android:layout_marginRight="-50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Google" />
+
+    <Button
+        android:id="@+id/btn_fblogin"
+        android:layout_width="94dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        android:text="@string/Facebook" />
 
 </LinearLayout>

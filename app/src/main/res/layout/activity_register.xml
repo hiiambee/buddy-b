@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="20sp"
+        android:layout_marginTop="170dp"
         android:layout_marginBottom="20dp"
         android:padding="15dp"
         android:textColor="@color/black"
@@ -74,5 +75,33 @@
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|bottom"
+        android:padding="10dp"
+        android:text="@string/LoginWith"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_googlelogin"
+        android:layout_width="94dp"
+        android:layout_marginRight="-50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Google" />
+
+    <Button
+        android:id="@+id/btn_fblogin"
+        android:layout_width="94dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        android:text="@string/Facebook" />
 
 </LinearLayout>

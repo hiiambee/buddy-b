@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "1025077770784-9ub3c8rpge87pllsapba3b9a8mffeksc.apps.googleusercontent.com",
+          "client_id": "1025077770784-c14fn3890emeb4jukate5a5kqomiue25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qol.buddyb",
+            "certificate_hash": "c9f18e7a1efed82057854d44527490b47c36ed9c"
+          }
+        },
+        {
+          "client_id": "1025077770784-8sc2bg902rj4a3udhhmo1a1v6gotqu70.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1025077770784-9ub3c8rpge87pllsapba3b9a8mffeksc.apps.googleusercontent.com",
+              "client_id": "1025077770784-8sc2bg902rj4a3udhhmo1a1v6gotqu70.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
