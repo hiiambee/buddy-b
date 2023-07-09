@@ -20,4 +20,5 @@
     <string name="LoginWith">Or log in using:</string>
     <string name="Google">Google</string>
     <string name="Facebook">Facebook</string>
+    <string name="title_activity_verify_mail">VerifyMail</string>
 </resources>

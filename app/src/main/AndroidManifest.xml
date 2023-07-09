@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,8 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.Light"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".VerifyMail"
+            android:exported="false"
+            android:label="@string/title_activity_verify_mail"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Register"
             android:exported="false"
@@ -27,6 +33,11 @@
             android:name=".Intro1"
             android:exported="false"
             android:label="@string/title_activity_intro1"
+            android:theme="@style/Theme.BuddyB" />
+        <activity
+            android:name=".Intro2"
+            android:exported="false"
+            android:label="@string/title_activity_intro2"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Splash"
@@ -43,8 +54,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.BuddyB">
-        </activity>
+            android:theme="@style/Theme.BuddyB"></activity>
     </application>
 
 </manifest>
