@@ -5,11 +5,11 @@ import android.app.Activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.qol.buddyb.databinding.ActivityIntro1Binding
-import com.qol.buddyb.databinding.ActivityLoginBinding
 
 class Intro1 : AppCompatActivity() {
 
     private lateinit var binding: ActivityIntro1Binding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

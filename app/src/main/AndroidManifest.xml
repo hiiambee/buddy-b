@@ -31,13 +31,18 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Intro1"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_intro1"
-            android:theme="@style/Theme.BuddyB" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Intro2"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_intro2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Intro3"
+            android:exported="true"
+            android:label="@string/title_activity_intro3"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Splash"
