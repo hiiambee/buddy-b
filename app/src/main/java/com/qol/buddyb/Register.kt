@@ -42,7 +42,7 @@ class Register : AppCompatActivity() {
                 if (password == confirmPassword){
                     auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
                         if (it.isSuccessful){
-                            val intent = Intent(this, Login::class.java)
+                            val intent = Intent(this, VerifyMail::class.java)
                             startActivity(intent)
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

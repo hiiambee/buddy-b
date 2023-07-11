@@ -32,7 +32,7 @@
         android:textStyle="italic" />
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_backlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Login" />

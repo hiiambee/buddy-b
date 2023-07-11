@@ -1,5 +1,6 @@
 package com.qol.buddyb
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,5 +22,11 @@ class VerifyMail : ComponentActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityVerifymailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.btnBacklogin.setOnClickListener{
+            val backloginIntent = Intent(this, Login::class.java)
+            startActivity(backloginIntent)
+        }
     }
 }
