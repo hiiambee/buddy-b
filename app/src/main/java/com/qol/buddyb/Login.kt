@@ -50,14 +50,14 @@ class Login : AppCompatActivity() {
             val email = binding.loginEmail.text.toString()
             val password = binding.loginPassword.text.toString()
 
-            if (email.isNotEmpty() && password.isNotEmpty()){
+            if (email.isNotEmpty() && password.isNotEmpty()) {
 
-                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener{
-                    if (it.isSuccessful){
+                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                    if (it.isSuccessful) {
                         val verifyemail = auth.currentUser?.isEmailVerified
                         val intent = Intent(this, MainActivity::class.java)
                         if (verifyemail == true) {
-                            val user = auth.currentUser
+                            auth.currentUser
                             startActivity(intent)
                         } else {
                             val unverify = Intent(this, VerifyMail::class.java)
@@ -68,19 +68,18 @@ class Login : AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Please input your login credentials.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please input your login credentials.", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
-        binding.signupredirect.setOnClickListener{
+        binding.signupredirect.setOnClickListener {
             val signupIntent = Intent(this, Register::class.java)
             startActivity(signupIntent)
         }
-        binding.forgorredirect.setOnClickListener{
+        binding.forgorredirect.setOnClickListener {
             val forgorIntent = Intent(this, Forgor::class.java)
             startActivity(forgorIntent)
         }
 
     }
-
-
 }
