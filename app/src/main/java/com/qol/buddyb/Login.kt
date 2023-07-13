@@ -54,8 +54,15 @@ class Login : AppCompatActivity() {
 
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener{
                     if (it.isSuccessful){
+                        val verifyemail = auth.currentUser?.isEmailVerified
                         val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
+                        if (verifyemail == true) {
+                            val user = auth.currentUser
+                            startActivity(intent)
+                        } else {
+                            val unverify = Intent(this, VerifyMail::class.java)
+                            startActivity(unverify)
+                        }
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }

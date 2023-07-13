@@ -42,6 +42,7 @@ class Register : AppCompatActivity() {
                 if (password == confirmPassword){
                     auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
                         if (it.isSuccessful){
+                            auth.currentUser?.sendEmailVerification()
                             val intent = Intent(this, VerifyMail::class.java)
                             startActivity(intent)
                         } else {
