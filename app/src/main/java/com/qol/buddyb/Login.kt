@@ -62,6 +62,7 @@ class Login : AppCompatActivity() {
                             finish()
                         } else {
                             val unverify = Intent(this, VerifyMail::class.java)
+                            FirebaseAuth.getInstance().signOut()
                             startActivity(unverify)
                             finish()
                         }
