@@ -28,6 +28,7 @@ class Forgor2 : AppCompatActivity() {
         binding.btnResetlogin2.setOnClickListener{
             val backlogin2Intent = Intent(this, Login::class.java)
             startActivity(backlogin2Intent)
+            finish()
         }
 
     }

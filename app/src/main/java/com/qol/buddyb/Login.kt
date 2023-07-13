@@ -59,9 +59,11 @@ class Login : AppCompatActivity() {
                         if (verifyemail == true) {
                             auth.currentUser
                             startActivity(intent)
+                            finish()
                         } else {
                             val unverify = Intent(this, VerifyMail::class.java)
                             startActivity(unverify)
+                            finish()
                         }
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -75,10 +77,12 @@ class Login : AppCompatActivity() {
         binding.signupredirect.setOnClickListener {
             val signupIntent = Intent(this, Register::class.java)
             startActivity(signupIntent)
+            finish()
         }
         binding.forgorredirect.setOnClickListener {
             val forgorIntent = Intent(this, Forgor::class.java)
             startActivity(forgorIntent)
+            finish()
         }
 
     }

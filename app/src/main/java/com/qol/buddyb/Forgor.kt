@@ -36,10 +36,12 @@ class Forgor : ComponentActivity() {
                     .addOnSuccessListener {
                         val redirect2 = Intent(this, Forgor2::class.java)
                         startActivity(redirect2)
+                        finish()
                     }
                     .addOnFailureListener {
                         val redirect3 = Intent(this, Forgor2::class.java)
                         startActivity(redirect3)
+                        finish()
                     }
             } else {
                 Toast.makeText(this, "Please input your login credentials.", Toast.LENGTH_SHORT).show()

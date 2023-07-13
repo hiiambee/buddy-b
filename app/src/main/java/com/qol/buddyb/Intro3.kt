@@ -28,11 +28,13 @@ class Intro3 : AppCompatActivity() {
         binding.next3.setOnClickListener {
             val intro2Intent = Intent(this, Login::class.java)
             startActivity(intro2Intent)
+            finish()
         }
 
         binding.skiplogin3.setOnClickListener {
             val login1Intent = Intent(this, Login::class.java)
             startActivity(login1Intent)
+            finish()
         }
     }
 }

@@ -17,11 +17,13 @@ class Intro2 : AppCompatActivity() {
         binding.next2.setOnClickListener {
             val intro2Intent = Intent(this, Intro3::class.java)
             startActivity(intro2Intent)
+            finish()
         }
 
         binding.skiplogin2.setOnClickListener {
             val login1Intent = Intent(this, Login::class.java)
             startActivity(login1Intent)
+            finish()
         }
     }
 }

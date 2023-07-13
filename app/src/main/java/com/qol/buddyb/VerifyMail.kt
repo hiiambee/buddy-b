@@ -27,6 +27,7 @@ class VerifyMail : ComponentActivity() {
         binding.btnBacklogin.setOnClickListener{
             val backloginIntent = Intent(this, Login::class.java)
             startActivity(backloginIntent)
+            finish()
         }
     }
 }

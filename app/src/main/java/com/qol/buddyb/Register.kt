@@ -45,6 +45,7 @@ class Register : AppCompatActivity() {
                             auth.currentUser?.sendEmailVerification()
                             val intent = Intent(this, VerifyMail::class.java)
                             startActivity(intent)
+                            finish()
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
@@ -59,6 +60,7 @@ class Register : AppCompatActivity() {
         binding.loginredirect.setOnClickListener{
             val loginIntent = Intent(this, Login::class.java)
             startActivity(loginIntent)
+            finish()
         }
     }
 }

@@ -22,11 +22,13 @@ class Intro1 : AppCompatActivity() {
         binding.next1.setOnClickListener {
             val intro2Intent = Intent(this, Intro2::class.java)
             startActivity(intro2Intent)
+            finish()
         }
 
         binding.skiplogin1.setOnClickListener {
             val login1Intent = Intent(this, Login::class.java)
             startActivity(login1Intent)
+            finish()
         }
     }
     public override fun onStart() {
@@ -35,6 +37,7 @@ class Intro1 : AppCompatActivity() {
         if (currentUser != null) {
             val skiplogin = Intent(this, MainActivity::class.java)
             startActivity(skiplogin)
+            finish()
         }
     }
 }
