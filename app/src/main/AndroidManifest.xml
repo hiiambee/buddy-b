@@ -45,6 +45,11 @@
             android:label="@string/title_activity_intro3"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".Forgor"
+            android:exported="true"
+            android:label="@string/title_activity_forgor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".Splash"
             android:exported="true"
             android:label="@string/title_activity_login"

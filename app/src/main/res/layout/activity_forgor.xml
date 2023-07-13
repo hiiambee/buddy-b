@@ -5,48 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
-    android:foreground="@drawable/icon"
-    android:foregroundGravity="top|center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Forgor">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/Login"
+        android:text="@string/forgorpass"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Please type the email you used for signup."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_email"
+            android:id="@+id/forgor_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:padding="15dp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/black">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
             android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,7 +50,8 @@
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Login" />
+        android:layout_marginTop="10dp"
+        android:text="@string/forgorlink" />
 
     <TextView
         android:id="@+id/signupredirect"
@@ -63,23 +60,11 @@
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/signupred"
+        android:text="@string/returnlogin"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/forgorredirect"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="90dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:gravity="center|bottom"
-        android:padding="10dp"
-        android:text="@string/forgor"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="italic" />
 
 </LinearLayout>
+

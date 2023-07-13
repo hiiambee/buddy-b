@@ -21,4 +21,10 @@
     <string name="Google">Google</string>
     <string name="Facebook">Facebook</string>
     <string name="title_activity_verify_mail">VerifyMail</string>
+    <string name="title_activity_Forgor">Forgor</string>
+    <string name="title_activity_forgor">Forgor</string>
+    <string name="forgor">Forgot Password? Click here.</string>
+    <string name="forgorpass">Forgot Password</string>
+    <string name="forgorlink">Send Reset Link</string>
+    <string name="returnlogin">Return to Login</string>
 </resources>

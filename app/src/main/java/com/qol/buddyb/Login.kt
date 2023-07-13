@@ -75,6 +75,10 @@ class Login : AppCompatActivity() {
             val signupIntent = Intent(this, Register::class.java)
             startActivity(signupIntent)
         }
+        binding.forgorredirect.setOnClickListener{
+            val forgorIntent = Intent(this, Forgor::class.java)
+            startActivity(forgorIntent)
+        }
 
     }
 
