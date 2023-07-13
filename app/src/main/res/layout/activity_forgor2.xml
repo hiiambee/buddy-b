@@ -10,7 +10,7 @@
     tools:context=".VerifyMail">
 
     <TextView
-        android:text="Please verify your email"
+        android:text="Please check your email inbox."
         android:fontFamily="sans-serif-condensed-medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,13 +25,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="15dp"
-        android:text="We have sent you a verification email. You have to verify your email first before you can use your new account. Check your spam folder in case the mail is not in your main inbox. After verifying, click on the button below to login using your account."
+        android:text="If your typed credentials matched any existing accounts in our database, you will receive instructions on how to reset your password on your mail. Check your spam folder in case the mail is not in your main inbox."
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic" />
 
     <Button
-        android:id="@+id/btn_backlogin"
+        android:id="@+id/btn_resetlogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Login" />

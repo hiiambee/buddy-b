@@ -1,5 +1,6 @@
 package com.qol.buddyb
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -33,10 +34,12 @@ class Forgor : ComponentActivity() {
             if (email.isNotEmpty()) {
                 auth.sendPasswordResetEmail(email)
                     .addOnSuccessListener {
-                        Toast.makeText(this, "Please check your mail", Toast.LENGTH_SHORT).show()
+                        val redirect2 = Intent(this, Forgor2::class.java)
+                        startActivity(redirect2)
                     }
                     .addOnFailureListener {
-                        Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+                        val redirect3 = Intent(this, Forgor2::class.java)
+                        startActivity(redirect3)
                     }
             } else {
                 Toast.makeText(this, "Please input your login credentials.", Toast.LENGTH_SHORT).show()
