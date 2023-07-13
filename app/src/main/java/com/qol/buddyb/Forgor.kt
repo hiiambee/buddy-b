@@ -47,5 +47,11 @@ class Forgor : ComponentActivity() {
                 Toast.makeText(this, "Please input your login credentials.", Toast.LENGTH_SHORT).show()
             }
         }
+
+        binding.loginredirect2.setOnClickListener{
+            val backlogin = Intent(this, Login::class.java)
+            startActivity(backlogin)
+            finish()
+        }
     }
 }

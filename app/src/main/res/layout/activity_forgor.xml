@@ -54,7 +54,7 @@
         android:text="@string/forgorlink" />
 
     <TextView
-        android:id="@+id/signupredirect"
+        android:id="@+id/loginredirect2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
