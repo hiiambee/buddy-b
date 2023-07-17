@@ -55,7 +55,7 @@ class Login : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
                         val verifyemail = auth.currentUser?.isEmailVerified
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, ProfileCreate::class.java)
                         if (verifyemail == true) {
                             auth.currentUser
                             startActivity(intent)
