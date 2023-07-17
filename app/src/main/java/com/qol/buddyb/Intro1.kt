@@ -34,6 +34,7 @@ class Intro1 : AppCompatActivity() {
             finish()
         }
     }
+
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
@@ -41,14 +42,18 @@ class Intro1 : AppCompatActivity() {
             val uid = FirebaseAuth.getInstance().currentUser!!.uid
             val ref = db.collection("displayname").document(uid)
             ref.get().addOnSuccessListener {
-                if (it != null){
-                    val skipdn = Intent(this, MainActivity::class.java)
-                    startActivity(skipdn)
-                    finish()
-                } else {
-                    val dn = Intent(this, ProfileCreate::class.java)
-                    startActivity(dn)
-                    finish()
+                if (it != null) {
+                    val disna = it.data?.get("displayname")?.toString()
+                    if (disna != null) {
+                        val skipdn = Intent(this, MainActivity::class.java)
+                        startActivity(skipdn)
+                        finish()
+                    } else {
+                        val dn = Intent(this, ProfileCreate::class.java)
+                        startActivity(dn)
+                        finish()
+                    }
+
                 }
             }
         }

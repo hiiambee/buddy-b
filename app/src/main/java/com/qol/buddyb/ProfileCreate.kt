@@ -35,21 +35,26 @@ class ProfileCreate : AppCompatActivity() {
         binding.btnProceed.setOnClickListener{
             val dn = binding.displayname.text.toString().trim()
 
-            val usermap = hashMapOf(
-                "displayname" to dn
-            )
+            if (dn.isNotEmpty()) {
+                val usermap = hashMapOf(
+                    "displayname" to dn
+                )
 
-            val userid = FirebaseAuth.getInstance().currentUser!!.uid
+                val userid = FirebaseAuth.getInstance().currentUser!!.uid
 
-            db.collection("displayname").document(userid).set(usermap)
-                .addOnSuccessListener {
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                }
-                .addOnFailureListener{
-                    Toast.makeText(this, "An error occurred. Please check your internet connection.", Toast.LENGTH_SHORT)
-                }
+                db.collection("displayname").document(userid).set(usermap)
+                    .addOnSuccessListener {
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                    .addOnFailureListener{
+                        Toast.makeText(this, "An error occurred. Please check your internet connection.", Toast.LENGTH_SHORT)
+                    }
+            } else {
+                Toast.makeText(this, "All fields cannot be empty.", Toast.LENGTH_SHORT).show()
+            }
+
         }
 
 

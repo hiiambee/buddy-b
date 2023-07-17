@@ -31,6 +31,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.qol.buddyb.databinding.ActivityLoginBinding
 import com.qol.buddyb.ui.theme.BuddyBTheme
 
@@ -38,6 +40,7 @@ class Login : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
+    private var db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,9 +60,27 @@ class Login : AppCompatActivity() {
                         val verifyemail = auth.currentUser?.isEmailVerified
                         val intent = Intent(this, ProfileCreate::class.java)
                         if (verifyemail == true) {
-                            auth.currentUser
-                            startActivity(intent)
-                            finish()
+                            val uid = FirebaseAuth.getInstance().currentUser!!.uid
+                            val ref = db.collection("displayname").document(uid)
+                            ref.get().addOnSuccessListener {
+                                if (it != null) {
+                                    val disna = it.data?.get("displayname")?.toString()
+                                    if (disna != null) {
+                                        val skipdn = Intent(this, MainActivity::class.java)
+                                        startActivity(skipdn)
+                                        finish()
+                                    } else {
+                                        val dn = Intent(this, ProfileCreate::class.java)
+                                        startActivity(dn)
+                                        finish()
+                                    }
+                                } else {
+                                    val dn = Intent(this, ProfileCreate::class.java)
+                                    startActivity(dn)
+                                    finish()
+                                }
+                            }
+
                         } else {
                             val unverify = Intent(this, VerifyMail::class.java)
                             FirebaseAuth.getInstance().signOut()
