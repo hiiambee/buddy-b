@@ -12,15 +12,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/investigator__4_"
+        android:background="@drawable/gradient_drawable"
         android:gravity="center"
-
         android:padding="15dp"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-71dp"
-        tools:layout_editor_absoluteY="0dp" />
-
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="-27dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
