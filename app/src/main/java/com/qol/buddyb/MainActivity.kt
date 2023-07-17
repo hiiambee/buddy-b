@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.qol.buddyb.databinding.ActivityMainactivityBinding
@@ -25,24 +26,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        replaceFragment(Home())
 
-        auth = FirebaseAuth.getInstance()
-        val user = auth.currentUser
 
-        if (user != null) {
-            binding.user.setText(user.email)
-        } else {
-            val backlogin = Intent(this, Login::class.java)
-            startActivity(backlogin)
-            finish()
+        binding.botnav.setOnItemSelectedListener {
+            when(it.itemId) {
+                R.id.home -> replaceFragment(Home())
+                R.id.savings -> replaceFragment(Savings())
+                R.id.budgeting -> replaceFragment(Budgeting())
+                R.id.investing -> replaceFragment(Investing())
+
+                else -> {
+
+                }
+
+
+            }
+            true
         }
-        binding.btnSignout.setOnClickListener{
-            FirebaseAuth.getInstance().signOut();
-            val backlogin = Intent(this, Login::class.java)
-            startActivity(backlogin)
-            finish()
-        }
 
+    }
+    private fun replaceFragment(fragment : Fragment){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.framenav,fragment)
+        fragmentTransaction.commit()
 
     }
 }

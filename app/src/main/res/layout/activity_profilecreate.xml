@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Forgor">
+    android:gravity="center"
+    tools:context=".ProfileCreate">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:padding="15dp"
-        android:text="@string/forgorpass"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="1dp"
+        android:text="What should we call you?"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="Please type the email you used for signup."
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="italic" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -39,32 +25,31 @@
         android:textColorHint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/forgor_email"
+            android:id="@+id/displayname"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
+            android:hint="@string/displayname"
             android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_forgor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/forgorlink" />
-
     <TextView
-        android:id="@+id/loginredirect2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:padding="15dp"
-        android:text="@string/returnlogin"
+        android:layout_marginBottom="20dp"
+        android:text="You can change this later."
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="10sp"
         android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_proceed"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/Proceed" />
+
 
 
 </LinearLayout>
-

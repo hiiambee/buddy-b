@@ -20,6 +20,11 @@
             android:label="@string/title_activity_verify_mail"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".ProfileCreate"
+            android:exported="true"
+            android:label="@string/profilecreate"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".Register"
             android:exported="false"
             android:label="@string/title_activity_register"
@@ -57,7 +62,7 @@
         <activity
             android:name=".Splash"
             android:exported="true"
-            android:label="@string/title_activity_login"
+            android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

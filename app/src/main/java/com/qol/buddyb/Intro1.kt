@@ -5,12 +5,15 @@ import android.app.Activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.qol.buddyb.databinding.ActivityIntro1Binding
 
 class Intro1 : AppCompatActivity() {
 
     private lateinit var binding: ActivityIntro1Binding
     private lateinit var auth: FirebaseAuth
+    private var db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,13 +34,28 @@ class Intro1 : AppCompatActivity() {
             finish()
         }
     }
+
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            val skiplogin = Intent(this, MainActivity::class.java)
-            startActivity(skiplogin)
-            finish()
+            val uid = FirebaseAuth.getInstance().currentUser!!.uid
+            val ref = db.collection("displayname").document(uid)
+            ref.get().addOnSuccessListener {
+                if (it != null) {
+                    val disna = it.data?.get("displayname")?.toString()
+                    if (disna != null) {
+                        val skipdn = Intent(this, MainActivity::class.java)
+                        startActivity(skipdn)
+                        finish()
+                    } else {
+                        val dn = Intent(this, ProfileCreate::class.java)
+                        startActivity(dn)
+                        finish()
+                    }
+
+                }
+            }
         }
     }
 }

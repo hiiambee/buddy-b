@@ -45,6 +45,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signup_password"
             android:hint="@string/password"
+            android:textColor="@color/black"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -58,6 +59,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signup_confirm"
             android:hint="@string/confirm"
+            android:textColor="@color/black"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

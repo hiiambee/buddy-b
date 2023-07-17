@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/savings"
+        android:title="Savings"
+        android:icon="@drawable/baseline_account_balance_24"/>
+    <item
+        android:id="@+id/budgeting"
+        android:title="Budgeting"
+        android:icon="@drawable/baseline_account_balance_wallet_24"/>
+    <item
+        android:id="@+id/investing"
+        android:title="Investing"
+        android:icon="@drawable/baseline_monetization_on_24"/>
+
+</menu>
