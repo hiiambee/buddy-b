@@ -20,6 +20,11 @@
             android:label="@string/title_activity_verify_mail"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".ProfileCreate"
+            android:exported="true"
+            android:label="@string/profilecreate"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".Register"
             android:exported="false"
             android:label="@string/title_activity_register"
