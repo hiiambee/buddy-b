@@ -89,6 +89,14 @@
 
 
 
+    <ImageView
+        android:id="@+id/bannerad1"
+        android:layout_width="363dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/gray_background" />
+
 
 
 </FrameLayout>
