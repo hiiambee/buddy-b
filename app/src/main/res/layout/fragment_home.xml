@@ -8,10 +8,31 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="top"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:padding="15dp"
+        android:text="Welcome,"
         android:textColor="@color/black"
-        android:text="Home" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userdisplay"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="148dp"
+        android:fontFamily="serif"
+        android:gravity="left"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 
 </FrameLayout>
