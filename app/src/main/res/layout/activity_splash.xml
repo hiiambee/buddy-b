@@ -23,10 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="BUDDY B MONEY TRACKER"
-        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:gravity="bottom|center"
         android:textColor="@color/black"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold"
+        android:paddingBottom="60dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="71dp" />
 
