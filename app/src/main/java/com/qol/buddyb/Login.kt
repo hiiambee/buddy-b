@@ -29,6 +29,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.ktx.firestore
@@ -50,6 +51,14 @@ class Login : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.btnLogin.setOnClickListener {
+            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id)) // Web client ID from Firebase Console
+                .requestEmail()
+                .build()
+            val googleSignInClient = GoogleSignIn.getClient(this, gso)
+            val signInIntent = googleSignInClient.signInIntent
+            val RC_GOOGLE_SIGN_IN = googleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_GOOGLE_SIGN_IN)
             val email = binding.loginEmail.text.toString()
             val password = binding.loginPassword.text.toString()
 
@@ -106,6 +115,10 @@ class Login : AppCompatActivity() {
             startActivity(forgorIntent)
             finish()
         }
+
+    }
+
+    private fun startActivityForResult(signInIntent: Intent, rcGoogleSignIn: Intent) {
 
     }
 }
