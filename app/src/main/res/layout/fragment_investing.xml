@@ -6,11 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".Investing">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:text="Investing" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/WatchlistView"
+                android:layout_width="363dp"
+                android:layout_height="380dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="top|center"
+                android:background="@drawable/gray_background" >
+
+                <TextView
+                    android:id="@+id/Watchlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Watchlist"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/watchlist1"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="top|center" />
+
+                <ImageView
+                    android:id="@+id/watchlist2"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="top|center" />
+
+                <ImageView
+                    android:id="@+id/watchlist3"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="210dp"
+                    android:layout_gravity="top|center" />
+
+                <ImageView
+                    android:id="@+id/watchlist4"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="290dp"
+                    android:layout_gravity="top|center" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/SuggestedView"
+                android:layout_width="363dp"
+                android:layout_height="380dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_background" >
+
+                <TextView
+                    android:id="@+id/Suggested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suggested"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp" />
+
+                <ImageView
+                    android:id="@+id/suggested1"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/gray_background" />
+
+                <ImageView
+                    android:id="@+id/suggested2"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="top|center" />
+
+                <ImageView
+                    android:id="@+id/suggested3"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="210dp"
+                    android:layout_gravity="top|center" />
+
+                <ImageView
+                    android:id="@+id/suggested4"
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="290dp"
+                    android:layout_gravity="top|center" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
