@@ -9,18 +9,26 @@
     android:orientation="vertical"
     tools:context=".Splash">
 
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_drawable"
+        android:gravity="center"
+        android:contentDescription="splash screen"
+        tools:layout_editor_absoluteX="-71dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/investigator__4_"
-        android:gravity="center"
-
-        android:padding="15dp"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:text="BUDDY B MONEY TRACKER"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-71dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="71dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

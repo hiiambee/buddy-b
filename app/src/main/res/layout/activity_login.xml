@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_drawable"
-    android:foreground="@drawable/icon"
-    android:foregroundGravity="top|center"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:foreground="@drawable/icon" />
 
     <TextView
         android:layout_width="match_parent"
@@ -34,7 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -47,7 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+        />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -65,7 +72,7 @@
         android:padding="15dp"
         android:text="@string/signupred"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:textStyle="italic" />
 
     <TextView
@@ -79,7 +86,7 @@
         android:padding="10dp"
         android:text="@string/forgor"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="13sp"
         android:textStyle="italic" />
 
 </LinearLayout>

@@ -34,7 +34,7 @@ class Savings : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_savings, container, false)
+        return inflater.inflate(R.layout.balance_3, container, false)
     }
 
     companion object {

@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/gradient_drawable"
-    android:foreground="@drawable/budget"
+    android:background="@drawable/budg"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Intro2">
@@ -38,6 +37,7 @@
         android:layout_width="134dp"
         android:layout_height="46dp"
         android:text="@string/Next"
+
         android:id="@+id/next2"
         tools:layout_editor_absoluteX="261dp"
         tools:layout_editor_absoluteY="669dp" />

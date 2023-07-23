@@ -3,9 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/gradient_drawable"
-    android:foreground="@drawable/saving"
-
+    android:background="@drawable/save"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Intro1">

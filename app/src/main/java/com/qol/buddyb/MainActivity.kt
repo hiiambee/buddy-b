@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.qol.buddyb.databinding.ActivityMainactivityBinding
 import com.qol.buddyb.ui.theme.BuddyBTheme
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,8 +28,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(Home())
-
-
         binding.botnav.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.home -> replaceFragment(Home())
