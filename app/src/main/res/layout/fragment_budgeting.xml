@@ -2,15 +2,224 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/teal_200"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Budgeting">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/TotalBalanceView"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/frame_background" />
+
+    <TextView
+        android:id="@+id/TotalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-195dp"
+        android:layout_marginBottom="16dp"
+        android:text="TOTAL BALANCE:"
         android:textColor="@color/black"
-        android:text="Budgeting" />
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/PHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="16dp"
+        android:text="PHP 0.00"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/BalanceBreakdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="BALANCE BREAKDOWN:"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="16dp"
+            android:text="INCOME:"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/PHP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            android:text="PHP 0.00"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/CashAtHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginBottom="16dp"
+            android:text="CASH AT HAND"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/PHP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            android:text="PHP 0.00"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/MobileWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginBottom="16dp"
+            android:text="MOBILE WALLET"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/PHP3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            android:text="PHP 0.00"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/BillsView"
+            android:layout_width="390dp"
+            android:layout_height="270dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/peach_gradient" />
+
+        <TextView
+            android:id="@+id/Bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-265dp"
+            android:layout_marginBottom="16dp"
+            android:text="BILLS"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/BillsButton1"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/gradient_blue" />
+
+        <ImageView
+            android:id="@+id/BillsButton2"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/gradient_blue" />
+
+        <ImageView
+            android:id="@+id/BillsButton3"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/gradient_blue" />
+
+        <ImageView
+            android:id="@+id/SubscriptionView"
+            android:layout_width="390dp"
+            android:layout_height="185dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/bluegreen_gradient" />
+
+        <TextView
+            android:id="@+id/Subscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-180dp"
+            android:layout_marginBottom="16dp"
+            android:text="SUBSCRIPTIONS"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/SubscriptionButton1"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/gradient_blue" />
+
+        <ImageView
+            android:id="@+id/SubscriptionButton3"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/gradient_blue" />
+
+    </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>
+
