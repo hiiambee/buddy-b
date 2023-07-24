@@ -28,7 +28,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/gradient_drawable"
         app:layout_constraintEnd_toEndOf="parent"
+        app:itemTextColor="@color/black"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/botnavbar" />

@@ -35,7 +35,6 @@
                 android:layout_width="320dp"
                 android:layout_height="48dp"
                 android:hint="Transaction Name"
-                android:background="@drawable/white_background_round_corner"
                 android:textColor="@android:color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -54,7 +53,6 @@
                 android:layout_width="320dp"
                 android:layout_height="48dp"
                 android:hint="Amount"
-                android:background="@drawable/white_background_round_corner"
                 android:textColor="@android:color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -73,7 +71,6 @@
                 android:layout_width="320dp"
                 android:layout_height="48dp"
                 android:hint="Notes"
-                android:background="@drawable/white_background_round_corner"
                 android:textColor="@android:color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +90,6 @@
                 android:layout_width="140dp"
                 android:layout_height="48dp"
                 android:hint="Date"
-                android:background="@drawable/white_background_round_corner"
                 android:textColor="@android:color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -113,7 +109,6 @@
                 android:layout_width="140dp"
                 android:layout_height="48dp"
                 android:hint="Time"
-                android:background="@drawable/white_background_round_corner"
                 android:textColor="@android:color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
