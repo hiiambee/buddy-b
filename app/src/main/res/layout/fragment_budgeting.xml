@@ -17,50 +17,48 @@
 
     <ImageView
         android:id="@+id/TotalBalanceView"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="top|center"
         android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
         android:background="@drawable/frame_background" />
 
     <TextView
-        android:id="@+id/TotalBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|left"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="-195dp"
+        android:layout_marginTop="-190dp"
         android:layout_marginBottom="16dp"
-        android:text="TOTAL BALANCE:"
-        android:textColor="@color/black"
-        android:textSize="25sp" />
-
-    <TextView
-        android:id="@+id/PHP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|left"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginBottom="16dp"
-        android:text="PHP 0.00"
+        android:text="TOTAL BALANCE: "
         android:textColor="@color/black"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/amounttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="16dp"
+        android:text="PHP 0.00"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
         <TextView
-            android:id="@+id/BalanceBreakdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            android:text="BALANCE BREAKDOWN:"
+            android:text="RECORDS THIS MONTH:"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/Income"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
@@ -69,72 +67,48 @@
             android:layout_marginBottom="16dp"
             android:text="INCOME:"
             android:textColor="@color/black"
-            android:textSize="13sp" />
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/PHP1"
+            android:id="@+id/amountgreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="-15dp"
             android:layout_marginBottom="16dp"
             android:text="PHP 0.00"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/CashAtHand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
-            android:layout_marginLeft="-10dp"
-            android:layout_marginTop="-60dp"
-            android:layout_marginBottom="16dp"
-            android:text="CASH AT HAND"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginBottom="56dp"
+            android:text="EXPENSES:"
             android:textColor="@color/black"
-            android:textSize="13sp" />
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/PHP2"
+            android:id="@+id/amountred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
-            android:layout_marginLeft="-10dp"
-            android:layout_marginTop="-20dp"
-            android:layout_marginBottom="16dp"
-            android:text="PHP 0.00"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/MobileWallet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|right"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="-60dp"
-            android:layout_marginBottom="16dp"
-            android:text="MOBILE WALLET"
-            android:textColor="@color/black"
-            android:textSize="13sp" />
-
-        <TextView
-            android:id="@+id/PHP3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|right"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="-20dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="-55dp"
             android:layout_marginBottom="16dp"
             android:text="PHP 0.00"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <ImageView
             android:id="@+id/BillsView"
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="270dp"
+            android:layout_marginHorizontal="20dp"
             android:layout_gravity="top|center"
             android:layout_marginTop="40dp"
             android:background="@drawable/peach_gradient" />
@@ -144,46 +118,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="35dp"
             android:layout_marginTop="-265dp"
             android:layout_marginBottom="16dp"
             android:text="BILLS"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
-        <ImageView
-            android:id="@+id/BillsButton1"
-            android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_gravity="top|center"
-            android:layout_marginTop="-10dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/gradient_blue" />
-
-        <ImageView
-            android:id="@+id/BillsButton2"
-            android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_gravity="top|center"
-            android:layout_marginTop="-50dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/gradient_blue" />
-
-        <ImageView
-            android:id="@+id/BillsButton3"
-            android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_gravity="top|center"
-            android:layout_marginTop="-50dp"
-            android:layout_marginBottom="60dp"
-            android:background="@drawable/gradient_blue" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginHorizontal="30dp"/>
 
         <ImageView
             android:id="@+id/SubscriptionView"
             android:layout_width="390dp"
             android:layout_height="185dp"
             android:layout_gravity="top|center"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="220dp"
             android:background="@drawable/bluegreen_gradient" />
 
         <TextView
