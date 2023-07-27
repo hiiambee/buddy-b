@@ -51,14 +51,6 @@ class Login : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.btnLogin.setOnClickListener {
-            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id)) // Web client ID from Firebase Console
-                .requestEmail()
-                .build()
-            val googleSignInClient = GoogleSignIn.getClient(this, gso)
-            val signInIntent = googleSignInClient.signInIntent
-            val RC_GOOGLE_SIGN_IN = googleSignInClient.signInIntent
-            startActivityForResult(signInIntent, RC_GOOGLE_SIGN_IN)
             val email = binding.loginEmail.text.toString()
             val password = binding.loginPassword.text.toString()
 
