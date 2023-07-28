@@ -107,7 +107,7 @@
         <ImageView
             android:id="@+id/BillsView"
             android:layout_width="match_parent"
-            android:layout_height="270dp"
+            android:layout_height="500dp"
             android:layout_marginHorizontal="20dp"
             android:layout_gravity="top|center"
             android:layout_marginTop="40dp"
@@ -119,9 +119,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
             android:layout_marginLeft="35dp"
-            android:layout_marginTop="-265dp"
+            android:layout_marginTop="-485dp"
             android:layout_marginBottom="16dp"
-            android:text="BILLS"
+            android:text="BILLS &amp; SUBSCRIPTIONS"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -137,43 +137,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/billrecycler"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="410dp"
             android:layout_marginHorizontal="30dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/bluegreen_gradient" />
-
-        <TextView
-            android:id="@+id/Subscription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|left"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="-260dp"
-            android:layout_marginBottom="16dp"
-            android:text="SUBSCRIPTIONS"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
-
-        <ImageView
-            android:id="@+id/addsubbutton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center|right"
-            android:layout_marginTop="-45dp"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/baseline_add_box_24" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/subrecycler"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            tools:listitem="@layout/subs_list"
-            android:layout_marginHorizontal="30dp"/>
 
     </LinearLayout>
 
