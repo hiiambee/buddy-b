@@ -5,5 +5,6 @@ import java.util.Date
 data class Bills(
     var title: String?= null,
     var amount: Long ?= null,
-    var due: Date ?= null
+    var due: Date ?= null,
+    var documentId: String? = null
 )

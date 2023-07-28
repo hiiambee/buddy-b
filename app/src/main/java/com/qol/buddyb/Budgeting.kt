@@ -48,6 +48,8 @@ class Budgeting : Fragment() {
         return rootView
     }
 
+
+
     private fun fetchbilldata() {
         db = FirebaseFirestore.getInstance()
         auth = FirebaseAuth.getInstance()
@@ -67,7 +69,9 @@ class Budgeting : Fragment() {
 
                     for (dc : DocumentChange in value?.documentChanges!!){
                         if (dc.type == DocumentChange.Type.ADDED){
-                            userArrayList.add(dc.document.toObject(Bills::class.java))
+                            val bill = dc.document.toObject(Bills::class.java)
+                            bill.documentId = dc.document.id
+                            userArrayList.add(bill)
                         }
                     }
 
@@ -77,4 +81,7 @@ class Budgeting : Fragment() {
 
             })
     }
+    
+
 }
+
