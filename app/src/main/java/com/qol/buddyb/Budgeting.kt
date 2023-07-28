@@ -67,7 +67,7 @@ class Budgeting : Fragment() {
         val uid = FirebaseAuth.getInstance().currentUser!!.uid
 
         db.collection("Database").document(uid)
-            .collection("bill")
+            .collection("bills")
             .addSnapshotListener(object : EventListener<QuerySnapshot>{
                 override fun onEvent(
                     value: QuerySnapshot?,

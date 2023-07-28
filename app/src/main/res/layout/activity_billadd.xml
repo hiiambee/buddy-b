@@ -67,6 +67,7 @@
                 android:layout_height="400dp"/>
 
             <TimePicker
+                android:id="@+id/timebill"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:layout_marginTop="20dp"

@@ -49,7 +49,7 @@ class BillAdapter(private val billList: ArrayList<Bills>) : RecyclerView.Adapter
         val billId = billList[position].documentId
 
         db.collection("Database").document(uid)
-            .collection("bill").document(billId!!)
+            .collection("bills").document(billId!!)
             .get()
             .addOnSuccessListener {
                 if (it != null) {
@@ -71,7 +71,7 @@ class BillAdapter(private val billList: ArrayList<Bills>) : RecyclerView.Adapter
 
                             // Remove the bill from Firestore
                             db.collection("Database").document(uid)
-                                .collection("bill").document(billId!!)
+                                .collection("bills").document(billId!!)
                                 .delete()
                                 .addOnSuccessListener {
                                     // Remove the bill from the list and update the RecyclerView
@@ -113,7 +113,7 @@ class BillAdapter(private val billList: ArrayList<Bills>) : RecyclerView.Adapter
 
         // Remove the bill from Firestore
         db.collection("Database").document(uid)
-            .collection("bill").document(billId!!)
+            .collection("bills").document(billId!!)
             .delete()
             .addOnSuccessListener {
                 // Remove the bill from the list and update the RecyclerView
