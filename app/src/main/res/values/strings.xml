@@ -34,4 +34,5 @@
     <string name="displayname">Display Name</string>
     <string name="Proceed">Proceed</string>
     <string name="profilecreate">Profilecreate</string>
+    <string name="billadd">BillAdd</string>
 </resources>
