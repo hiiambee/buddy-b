@@ -129,12 +129,33 @@
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/gray_background" />
 
+            <TextView
+                android:id="@+id/Bills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-685dp"
+                android:layout_marginBottom="16dp"
+                android:text="SAVINGS"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/addbillbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="-45dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/baseline_add_box_24" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/savrecycler"
                 android:layout_width="match_parent"
-                android:layout_height="670dp"
+                android:layout_height="610dp"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="-685dp"/>
+                android:layout_marginTop="20dp"/>
 
         </LinearLayout>
 
