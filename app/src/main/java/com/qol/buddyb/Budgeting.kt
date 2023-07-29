@@ -46,7 +46,7 @@ class Budgeting : Fragment() {
         myAdapter = BillAdapter(userArrayList)
         recyclerView.adapter = myAdapter
 
-        fetchexpensedata()
+        fetchmoneydata()
         fetchbilldata()
 
         val addbutton = rootView.findViewById<ImageView>(R.id.addbillbutton)
@@ -61,12 +61,14 @@ class Budgeting : Fragment() {
 
     }
 
-    private fun fetchexpensedata() {
+    private fun fetchmoneydata() {
         db = FirebaseFirestore.getInstance()
         auth = FirebaseAuth.getInstance()
         val uid = FirebaseAuth.getInstance().currentUser!!.uid
         val mainCollectionRef = db.collection("Database")
         val subCollectionRef = mainCollectionRef.document(uid).collection("expense")
+        val subCollectionRef2 = mainCollectionRef.document(uid).collection("saving")
+        var totalbal = 0
 
         subCollectionRef.get()
             .addOnSuccessListener { documents ->
@@ -77,7 +79,7 @@ class Budgeting : Fragment() {
                         val expenseData = document.toObject(Expense::class.java)
                         sum += expenseData.amount?: 0
                     }
-
+                    totalbal -= sum
                     val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
                     amountRedTextView?.text = "PHP $sum"
 
@@ -90,6 +92,32 @@ class Budgeting : Fragment() {
                 val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
                 amountRedTextView?.text = "OFFLINE"
             }
+
+        subCollectionRef2.get()
+            .addOnSuccessListener { documents ->
+                if (!documents.isEmpty) {
+                    var sum2 = 0
+
+                    for (document in documents) {
+                        val savingData = document.toObject(Saving::class.java)
+                        sum2 += savingData.amount?: 0
+                    }
+                    totalbal += sum2
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
+                    amountRedTextView?.text = "PHP $sum2"
+                    val amountbalTextView = view?.findViewById<TextView>(R.id.amounttotal)
+                    amountbalTextView?.text = "PHP $totalbal"
+
+                } else {
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
+                    amountRedTextView?.text = "PHP 0.00"
+                }
+            }
+            .addOnFailureListener { exception ->
+                val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
+                amountRedTextView?.text = "OFFLINE"
+            }
+
     }
 
 
