@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@drawable/gradient_blue"
+    android:background="@drawable/peach_gradient"
     android:padding="14dp">
 
     <LinearLayout
