@@ -65,6 +65,12 @@ class Savings : Fragment() {
             startActivity(intent)
         }
 
+        val addexpbutton = rootView.findViewById<ImageView>(R.id.addexpbutton)
+        addexpbutton.setOnClickListener{
+            val intent = Intent(requireContext(), ExpAdd::class.java)
+            startActivity(intent)
+        }
+
         return rootView
     }
 
