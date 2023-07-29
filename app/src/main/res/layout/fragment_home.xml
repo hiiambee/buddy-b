@@ -47,8 +47,19 @@
                 android:layout_gravity="top|left"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="-215dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="10dp"
                 android:text="TOTAL BALANCE: "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hometotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="(amount)"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -57,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|left"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginBottom="16dp"
                 android:text="OVERALL RECORDS:"
                 android:textColor="@color/black"
@@ -75,15 +86,38 @@
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/homeinc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-15dp"
+                android:text="(amount)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|left"
                 android:layout_marginLeft="200dp"
-                android:layout_marginTop="-35dp"
-                android:layout_marginBottom="56dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginBottom="15dp"
                 android:text="EXPENSES:"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/homeexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="30dp"
+                android:text="(amount)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <ImageView
                 android:id="@+id/ads"
@@ -97,7 +131,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="560dp"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
                 android:background="@drawable/magenta_background" />
@@ -107,47 +141,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|left"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="-305dp"
+                android:layout_marginTop="-545dp"
                 android:layout_marginBottom="280dp"
-                android:text="BILLS"
+                android:text="BILLS &amp; SUBSCRIPTIONS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/billhomerecycler"
                 android:layout_width="match_parent"
-                tools:listitem="@layout/billshome_list"
-                android:layout_height="220dp"
+                android:layout_height="470dp"
                 android:layout_marginTop="-250dp"
                 android:layout_marginHorizontal="30dp"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="320dp"
-                android:layout_gravity="top|center"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/magenta_background" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|left"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="-345dp"
-                android:layout_marginBottom="16dp"
-                android:text="SUBSCRIPTIONS"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/subhomerecycler"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                tools:listitem="@layout/subshome_list"
-                android:layout_marginTop="0dp"
-                android:layout_marginHorizontal="30dp"/>
         </LinearLayout>
 
 
