@@ -132,7 +132,6 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/savrecycler"
                 android:layout_width="match_parent"
-                tools:listitem="@layout/sav_list"
                 android:layout_height="670dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="-685dp"/>
