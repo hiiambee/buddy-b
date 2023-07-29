@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.compose.material3.Button
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,6 +46,7 @@ class Budgeting : Fragment() {
         myAdapter = BillAdapter(userArrayList)
         recyclerView.adapter = myAdapter
 
+        fetchexpensedata()
         fetchbilldata()
 
         val addbutton = rootView.findViewById<ImageView>(R.id.addbillbutton)
@@ -59,6 +61,36 @@ class Budgeting : Fragment() {
 
     }
 
+    private fun fetchexpensedata() {
+        db = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+        val uid = FirebaseAuth.getInstance().currentUser!!.uid
+        val mainCollectionRef = db.collection("Database")
+        val subCollectionRef = mainCollectionRef.document(uid).collection("expense")
+
+        subCollectionRef.get()
+            .addOnSuccessListener { documents ->
+                if (!documents.isEmpty) {
+                    var sum = 0
+
+                    for (document in documents) {
+                        val expenseData = document.toObject(Expense::class.java)
+                        sum += expenseData.amount?: 0
+                    }
+
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                    amountRedTextView?.text = "PHP $sum"
+
+                } else {
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                    amountRedTextView?.text = "PHP 0.00"
+                }
+            }
+            .addOnFailureListener { exception ->
+                val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                amountRedTextView?.text = "OFFLINE"
+            }
+    }
 
 
     private fun fetchbilldata() {
