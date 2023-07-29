@@ -185,6 +185,8 @@ class Savings : Fragment() {
                         } else {
                             val amountRedTextView = view?.findViewById<TextView>(R.id.exp)
                             amountRedTextView?.text = "PHP 0.00"
+                            val amountbalTextView = view?.findViewById<TextView>(R.id.totalbal)
+                            amountbalTextView?.text = "PHP 0.00"
                         }
                     }
                     .addOnFailureListener { exception ->

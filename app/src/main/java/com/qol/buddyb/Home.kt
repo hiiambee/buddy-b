@@ -118,6 +118,8 @@ class Home : Fragment() {
                         } else {
                             val amountRedTextView = view?.findViewById<TextView>(R.id.homeexp)
                             amountRedTextView?.text = "PHP 0.00"
+                            val amountbalTextView = view?.findViewById<TextView>(R.id.hometotal)
+                            amountbalTextView?.text = "PHP 0.00"
                         }
                     }
                     .addOnFailureListener { exception ->

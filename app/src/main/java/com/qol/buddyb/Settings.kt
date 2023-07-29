@@ -50,6 +50,14 @@ class Settings : AppCompatActivity() {
             }
         }
 
+        binding.logout.setOnClickListener{
+            auth = FirebaseAuth.getInstance()
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(this, Splash::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
     }
 }
