@@ -37,4 +37,6 @@
     <string name="billadd">BillAdd</string>
     <string name="savadd">SavAdd</string>
     <string name="expadd">ExpAdd</string>
+    <string name="settings">Settings\n</string>
+    <string name="updatedn">UpdateDn</string>
 </resources>
