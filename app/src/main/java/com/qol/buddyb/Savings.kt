@@ -48,6 +48,12 @@ class Savings : Fragment() {
 
         fetchsavdata()
 
+        val addbutton = rootView.findViewById<ImageView>(R.id.addsavbutton)
+        addbutton.setOnClickListener{
+            val intent = Intent(requireContext(), SavAdd::class.java)
+            startActivity(intent)
+        }
+
         return rootView
     }
 

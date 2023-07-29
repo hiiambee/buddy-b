@@ -70,29 +70,6 @@ class Budgeting : Fragment() {
         val subCollectionRef2 = mainCollectionRef.document(uid).collection("saving")
         var totalbal = 0
 
-        subCollectionRef.get()
-            .addOnSuccessListener { documents ->
-                if (!documents.isEmpty) {
-                    var sum = 0
-
-                    for (document in documents) {
-                        val expenseData = document.toObject(Expense::class.java)
-                        sum += expenseData.amount?: 0
-                    }
-                    totalbal -= sum
-                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
-                    amountRedTextView?.text = "PHP $sum"
-
-                } else {
-                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
-                    amountRedTextView?.text = "PHP 0.00"
-                }
-            }
-            .addOnFailureListener { exception ->
-                val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
-                amountRedTextView?.text = "OFFLINE"
-            }
-
         subCollectionRef2.get()
             .addOnSuccessListener { documents ->
                 if (!documents.isEmpty) {
@@ -105,13 +82,38 @@ class Budgeting : Fragment() {
                     totalbal += sum2
                     val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
                     amountRedTextView?.text = "PHP $sum2"
-                    val amountbalTextView = view?.findViewById<TextView>(R.id.amounttotal)
-                    amountbalTextView?.text = "PHP $totalbal"
 
                 } else {
                     val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
                     amountRedTextView?.text = "PHP 0.00"
                 }
+
+        subCollectionRef.get()
+            .addOnSuccessListener { documents ->
+                if (!documents.isEmpty) {
+                    var sum = 0
+
+                    for (document in documents) {
+                        val expenseData = document.toObject(Expense::class.java)
+                        sum += expenseData.amount?: 0
+                    }
+                    totalbal -= sum
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                    amountRedTextView?.text = "PHP $sum"
+                    val amountbalTextView = view?.findViewById<TextView>(R.id.amounttotal)
+                    amountbalTextView?.text = "PHP $totalbal"
+
+                } else {
+                    val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                    amountRedTextView?.text = "PHP 0.00"
+                }
+            }
+            .addOnFailureListener { exception ->
+                val amountRedTextView = view?.findViewById<TextView>(R.id.amountred)
+                amountRedTextView?.text = "OFFLINE"
+            }
+
+
             }
             .addOnFailureListener { exception ->
                 val amountRedTextView = view?.findViewById<TextView>(R.id.amountgreen)
