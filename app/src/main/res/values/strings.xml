@@ -39,4 +39,5 @@
     <string name="expadd">ExpAdd</string>
     <string name="settings">Settings\n</string>
     <string name="updatedn">UpdateDn</string>
+    <string name="changepass">ChangePass</string>
 </resources>

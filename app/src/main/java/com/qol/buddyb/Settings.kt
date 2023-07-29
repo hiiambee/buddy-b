@@ -39,6 +39,17 @@ class Settings : AppCompatActivity() {
             finish()
         }
 
+        binding.changepw.setOnClickListener{
+            auth = FirebaseAuth.getInstance()
+            val email = auth.currentUser?.email
+            if (email != null) {
+                auth.sendPasswordResetEmail(email)
+                val intent = Intent(this, ChangePass::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
+
 
     }
 }
