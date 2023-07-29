@@ -137,12 +137,12 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="-685dp"
                 android:layout_marginBottom="16dp"
-                android:text="SAVINGS"
+                android:text="INCOME"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
             <ImageView
-                android:id="@+id/addbillbutton"
+                android:id="@+id/addsavbutton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center|right"
@@ -152,6 +152,41 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/savrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="610dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/gray_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-685dp"
+                android:layout_marginBottom="16dp"
+                android:text="EXPENSES"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/addexpbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="-45dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/baseline_add_box_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exprecycler"
                 android:layout_width="match_parent"
                 android:layout_height="610dp"
                 android:layout_marginHorizontal="30dp"
