@@ -27,61 +27,168 @@
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"/>
 
-            <FrameLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
                 android:layout_marginHorizontal="20dp"
-                android:layout_gravity="top|center"
-                android:background="@drawable/gray_background" >
+                android:layout_height="250dp"
+                android:background="@drawable/gray_background"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top|center" />
+
+            <TextView
+                android:id="@+id/symbol1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SYMBOL"
+                android:layout_marginTop="-235dp"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/exchange1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EXCHANGE"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/open1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/close1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/high1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/low1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/volume1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volume:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/watchlist1"
                     android:layout_width="match_parent"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_height="60dp"
+                    android:layout_height="250dp"
                     android:background="@drawable/gray_background"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="top|center" />
 
-                <ImageView
-                    android:id="@+id/watchlist2"
+                <TextView
+                    android:id="@+id/symbol2"
                     android:layout_width="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/gray_background"
-                    android:layout_marginTop="80dp"
-                    android:layout_gravity="top|center" />
+                    android:layout_height="wrap_content"
+                    android:text="SYMBOL"
+                    android:layout_marginTop="-235dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
 
-                <ImageView
-                    android:id="@+id/watchlist3"
+                <TextView
+                    android:id="@+id/exchange2"
                     android:layout_width="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/gray_background"
-                    android:layout_marginTop="150dp"
-                    android:layout_gravity="top|center" />
+                    android:layout_height="wrap_content"
+                    android:text="EXCHANGE"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
 
-                <ImageView
-                    android:id="@+id/watchlist4"
+                <TextView
+                    android:id="@+id/open2"
                     android:layout_width="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/gray_background"
-                    android:layout_marginTop="220dp"
-                    android:layout_gravity="top|center" />
+                    android:layout_height="wrap_content"
+                    android:text="Open:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
 
-                <ImageView
-                    android:id="@+id/watchlist5"
+                <TextView
+                    android:id="@+id/close2"
                     android:layout_width="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/gray_background"
-                    android:layout_marginTop="290dp"
-                    android:layout_gravity="top|center" />
+                    android:layout_height="wrap_content"
+                    android:text="Close:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
 
-            </FrameLayout>
+                <TextView
+                    android:id="@+id/high2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/low2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/volume2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>
