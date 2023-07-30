@@ -196,10 +196,6 @@
 
 
     </ScrollView>
-<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:layout_gravity="center|bottom"
-    android:background="@drawable/baseline_add_box_24"/>
+
 
 </FrameLayout>
