@@ -188,6 +188,249 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="top|center" />
+
+                <TextView
+                    android:id="@+id/symbol3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SYMBOL"
+                    android:layout_marginTop="-235dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/exchange3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EXCHANGE"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/open3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/close3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/high3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/low3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/volume3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="top|center" />
+
+                <TextView
+                    android:id="@+id/symbol4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SYMBOL"
+                    android:layout_marginTop="-235dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/exchange4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EXCHANGE"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/open4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/close4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/high4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/low4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/volume4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/gray_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="top|center" />
+
+                <TextView
+                    android:id="@+id/symbol5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SYMBOL"
+                    android:layout_marginTop="-235dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/exchange5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EXCHANGE"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/open5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/close5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Close:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/high5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/low5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Low:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/volume5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Volume:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
 
 
         </LinearLayout>
