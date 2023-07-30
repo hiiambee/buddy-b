@@ -3,10 +3,10 @@
 Company/Group Name: QoL Corporation
 
 Group Member:
-Jay F. Salvacion - Frontend
-Jhonas L. Abaja - Quality Assurance
-Christian Nathaniel R. Simple - User Interface
-Emmanuel John F. Quiñones - Backend / Firestore Database
+Jay F. Salvacion (Frontend)
+Jhonas L. Abaja (Quality Assurance)
+Christian Nathaniel R. Simple (User Interface)
+Emmanuel John F. Quiñones (Backend / Firestore Database)
 
 Project Name: Buddy B ("Money Tracker")
 
